@@ -1,5 +1,5 @@
 {
-  "name": "MERN_chat_app",
+  "name": "Nodejs chat app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iachieve/MERN_chatapp.git"
+    "url": "git+https://github.com/iachieve/Nodejs_chatapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iachieve/MERN_chatapp/issues"
+    "url": "https://github.com/iachieve/Nodejs_chatapp/issues"
   },
-  "homepage": "https://github.com/iachieve/MERN_chatapp#readme",
+  "homepage": "https://github.com/iachieve/Nodejs_chatapp#readme",
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^2.0.2"
