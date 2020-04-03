@@ -16,7 +16,7 @@ const { generateMessage, generateLocationMessage } = require('./utils/messages.j
 const { addUser, getUser, getUsersInRoom, removeUser } = require('./utils/users')
 
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 if (process.env.NODE_ENV !== 'production') {
   require('dotenv').config()
 }
@@ -74,6 +74,14 @@ io.on('connection', socket => {
       });
     }
   });
+});
+
+app.set('views', publicDirectoryPath);
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+
+app.get('*', (req, res) => {
+  res.render('404');
 });
 
 
